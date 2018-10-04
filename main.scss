@@ -1,0 +1,63 @@
+$color:skyblue;
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: $color;
+    display: grid;
+    grid-template-rows: 1fr 2.5fr 1fr;
+    grid-template-columns: 1fr minmax(300px, 1.5fr) 1fr;
+    #container {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 5fr minmax(100px, 2fr);
+        grid-template-rows: 4fr 1fr;
+        border: dotted black 2px;
+        #quote {
+            height: 200px;
+            grid-column: 1/4;
+            grid-row: 1/2;
+            border: dotted blue 2px;
+        }
+        #new-quote {
+            background: $color;
+            color: white;
+            font-weight: 800;
+            padding: 10px;
+            grid-column: 3/4;
+            grid-row: 2/3;
+            align-self: center;
+            justify-self: center;
+            border: dashed red 2px;
+            border-radius: 5px;
+        }
+        #tweet {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            align-self: center;
+            justify-self: center;
+            color: $color;
+            border: dashed red 2px;
+        }
+        #tweet:hover {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            align-self: center;
+            justify-self: center;
+            color: #00aced;
+            border: dashed red 2px;
+        }
+    }
+}
