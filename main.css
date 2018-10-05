@@ -24,13 +24,10 @@ body #container {
   display: grid;
   grid-template-columns: 1fr 5fr minmax(100px, 2fr);
   grid-template-rows: 4fr 1fr;
-  border: dotted black 2px;
 }
 body #container #quote {
-  height: 200px;
   grid-column: 1/4;
   grid-row: 1/2;
-  border: dotted blue 2px;
 }
 body #container #new-quote {
   background: skyblue;
@@ -41,8 +38,7 @@ body #container #new-quote {
   grid-row: 2/3;
   align-self: center;
   justify-self: center;
-  border: dashed red 2px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 body #container #tweet {
   grid-column: 1/2;
@@ -50,7 +46,6 @@ body #container #tweet {
   align-self: center;
   justify-self: center;
   color: skyblue;
-  border: dashed red 2px;
 }
 body #container #tweet:hover {
   grid-column: 1/2;
@@ -58,7 +53,21 @@ body #container #tweet:hover {
   align-self: center;
   justify-self: center;
   color: #00aced;
-  border: dashed red 2px;
+}
+body #container #quote-text {
+  padding-top: 5%;
+  color: skyblue;
+  font-size: 30px;
+  display: inline-block;
+  text-align: justify;
+}
+body #container #new-quote:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+body #container #author {
+  color: skyblue;
+  font-size: 25px;
+  text-align: right;
 }
 
 /*# sourceMappingURL=main.css.map */
