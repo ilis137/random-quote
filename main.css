@@ -21,6 +21,7 @@ body #container {
   background: white;
   border-radius: 20px;
   padding: 20px;
+  box-shadow: 10px 10px 5px 4px rgba(0, 0, 0, 0.4);
   display: grid;
   grid-template-columns: 1fr 5fr minmax(100px, 2fr);
   grid-template-rows: 4fr 1fr;
@@ -39,6 +40,7 @@ body #container #new-quote {
   align-self: center;
   justify-self: center;
   border-radius: 10px;
+  border: 2px solid skyblue;
 }
 body #container #tweet {
   grid-column: 1/2;
@@ -60,6 +62,7 @@ body #container #quote-text {
   font-size: 30px;
   display: inline-block;
   text-align: justify;
+  font-family: "Mali", Verdana;
 }
 body #container #new-quote:focus {
   outline: -webkit-focus-ring-color auto 0px;
@@ -68,6 +71,7 @@ body #container #author {
   color: skyblue;
   font-size: 25px;
   text-align: right;
+  font-family: "Mali", Verdana;
 }
 
 /*# sourceMappingURL=main.css.map */

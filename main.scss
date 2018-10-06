@@ -21,6 +21,7 @@ body {
         background: white;
         border-radius: 20px;
         padding: 20px;
+        box-shadow: 10px 10px 5px 4px rgba(0, 0, 0, 0.4);
         display: grid;
         grid-template-columns: 1fr 5fr minmax(100px, 2fr);
         grid-template-rows: 4fr 1fr;
@@ -38,6 +39,7 @@ body {
             align-self: center;
             justify-self: center;
             border-radius: 10px;
+            border: 2px solid $color;
         }
         #tweet {
             grid-column: 1/2;
@@ -59,6 +61,7 @@ body {
             font-size: 30px;
             display: inline-block;
             text-align: justify;
+            font-family: 'Mali', Verdana;
         }
         #new-quote:focus {
             outline: -webkit-focus-ring-color auto 0px;
@@ -67,6 +70,7 @@ body {
             color: $color;
             font-size: 25px;
             text-align: right;
+            font-family: 'Mali', Verdana;
         }
     }
 }
