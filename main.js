@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
 
-    $.ajax({
-        url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
-        success: function(response) {
+    $.getJSON(
+        "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?",
+        function(response) {
 
 
             $("#quote-Text").html(response[0].content);
@@ -12,10 +12,9 @@ $(document).ready(function() {
             const qt = $("#quote-Text").text();
             //console.log(qt);
             $("#tweet").attr('href', 'https://twitter.com/intent/tweet?text=' + qt + ' ' + "--" + response[0].title);
-        },
-        cache: false
+        }
 
-    });
+    );
     $("#new-quote").click(randomQuote);
     $("#new-quote").mouseenter(function(e) {
         left = !left;
